@@ -230,7 +230,7 @@ header img {
     border: white 0px solid;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    padding: 15px;
+    padding: 8px;
 }
 
 h3 {
@@ -255,10 +255,9 @@ footer {
 }
 
 .tunning {
-    display: block;         /* Hace que el enlace se comporte como una caja contenedora */
-    text-decoration: none;  /* Quita el subrayado típico de los enlaces */
-    color: inherit;         /* Hereda el color de texto original (blanco) en lugar de ponerse azul */
-    cursor: pointer;        /* Asegura que salga la manita al pasar el ratón */
+    display: block;         
+    text-decoration: none;  
+    cursor: pointer;        
 }
 
 @media (max-width: 900px) {
