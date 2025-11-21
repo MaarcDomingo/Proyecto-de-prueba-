@@ -59,7 +59,7 @@ header img {
 } 
 
 .row{
-  display: flex;
+    display: flex;
     flex-direction: row;
     gap: 15px;
 }
@@ -243,7 +243,23 @@ h3 {
   margin-right: auto;   
   margin-top: 30px;
 }
+footer {       
+  color: #000000;
+  text-align: center;
+  margin: 0;;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
 
+.textfooter {
+  font-size: 14px;
+}
+
+.tunning {
+    display: block;         /* Hace que el enlace se comporte como una caja contenedora */
+    text-decoration: none;  /* Quita el subrayado típico de los enlaces */
+    color: inherit;         /* Hereda el color de texto original (blanco) en lugar de ponerse azul */
+    cursor: pointer;        /* Asegura que salga la manita al pasar el ratón */
+}
 
 @media (max-width: 900px) {
 }
