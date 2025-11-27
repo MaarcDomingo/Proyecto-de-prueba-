@@ -242,11 +242,14 @@ h3 {
   margin-left: auto;    
   margin-right: auto;   
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 footer {       
   color: #000000;
   text-align: center;
-  margin: 0;;
+  background-color: #b7b7b7;
+  padding: 5px;
+  margin: 0;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
