@@ -44,6 +44,7 @@ nav {
   height: 85px;
   margin: 0;
   padding: 0;
+  margin-left: 20px;
 }
 
 a {
@@ -119,9 +120,14 @@ h2{
 }
 
 footer {       
-  color: #000000;
   text-align: center;
   margin: 0;;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #000000;
+  text-align: center;
+  background-color: #b7b7b7;
+  padding: 5px;
+  margin: 0;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .textfooter {
@@ -130,26 +136,43 @@ footer {
 
 @media (max-width: 900px) {
   nav {
-    flex-direction: row;
-    align-items: center;  
-  }
+        flex-direction: column; 
+        padding-bottom: 10px;
+        height: auto; 
+    }
+
+    .logo {
+        margin: 10px auto;
+        height: 50px; 
+    }
+
+     .menu {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 1px;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .menu li {
+        text-align: center; 
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 16px; 
+        display: block;  /* Para que sea fácil darle con el dedo */
+        padding: 5px 0;
+    }
+
   .comet {
     height: 100%;
   }
-
   .texto-comet{
     text-align: justify;
     font-size: 19px;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .logo {
-    height: 60px;
-    margin-bottom: 10px;
-  }
-  .menu {
-    gap: 14%;
-    font-size: 16px;
   }
   .equipo-grid {
     flex-direction: column;
@@ -181,30 +204,42 @@ footer {
     margin-right: 3%;
     
   }
-  nav, a {
-    padding: 0;
-    font-size: 14px;
+    nav {
+        flex-direction: column; 
+        padding-bottom: 10px;
+        height: auto; 
+    }
 
-  }
-  .menu {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  gap: auto;
-  }
-  .logo {
-    height: 30px;
-    margin-right: 15px;
-  }
+    .logo {
+        margin: 7px auto;
+        height: 50px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 1px;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .menu li {
+        text-align: center; 
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 16px; 
+        display: block;  /* Para que sea fácil darle con el dedo */
+        padding: 5px 0;
+    }
+    
   .equipo-grid {
     flex-direction: column;
     gap: 18px;
   }
   .comet {
-    height: 143%;
+    height: 98%;
   }
   .equipo-item {
     width: 70%;
@@ -213,6 +248,4 @@ footer {
     text-align: center;
     justify-content: center;
   }
-
-
 }

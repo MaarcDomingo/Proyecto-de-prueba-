@@ -51,6 +51,7 @@ nav {
   height: 85px;
   margin: 0;
   padding: 0;
+  margin-left: 20px;
 }
 
 a {
@@ -107,4 +108,73 @@ footer {
 }
 .textfooter {
   font-size: 14px;
+}
+
+@media (max-width: 350px) {
+    
+      nav {
+        flex-direction: column; 
+        padding-bottom: 10px;
+        height: auto; 
+    }
+
+    .logo {
+        margin: 7px auto;
+        height: 50px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 1px;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .menu li {
+        text-align: center; 
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 16px; 
+        display: block;  /* Para que sea fácil darle con el dedo */
+        padding: 5px 0;
+    }
+
+    .titulo1 {
+        font-size: 22px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+  
+    .row {
+        grid-template-columns: 1fr; 
+        width: 95%; 
+        gap: 15px;
+    }
+
+
+    .coches {
+        width: 100%; 
+        height: auto;
+        aspect-ratio: 16/9; 
+    }
+
+    
+    .comet {
+        position: fixed;
+        height: 100vh;   
+    }
+
+    footer {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .textfooter {
+        font-size: 13px; /* Texto legal más pequeño */
+        color: rgb(255, 253, 253);
+    }
 }

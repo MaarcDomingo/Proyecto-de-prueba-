@@ -33,6 +33,7 @@ nav {
 .logo {
   height: 85px;
   margin: 0;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -69,7 +70,7 @@ header img {
     height: 250px;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/2.png);
+    background-image: url(../img/itali/2.png);
     background-size: cover;
     background-repeat: no-repeat;
     border: white 1px solid;
@@ -82,7 +83,7 @@ header img {
     height: 250px;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/7.png);
+    background-image: url(../img/specte/7.png);
     background-size: cover;
     background-repeat: no-repeat;
     border: white 1px solid;
@@ -92,7 +93,7 @@ header img {
     height: 250px;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/3.png);
+    background-image: url(../img/obey/3.png);
     background-size: cover;
     background-repeat: no-repeat;
     border: white 1px solid;
@@ -102,7 +103,7 @@ header img {
     height: 250px;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/1.png);
+    background-image: url(../img/nero/1.png);
     background-size: cover;
     background-repeat: no-repeat;
     border: white 1px solid;
@@ -111,6 +112,7 @@ header img {
 .botoncoche {
     color: rgb(255, 255, 255);
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     margin-top: 3%;
@@ -223,7 +225,8 @@ header img {
 
 .tarjeta {
     width: 400px;   
-    margin-top: -10px;            
+    margin-top: -10px; 
+    text-align: center;           
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -263,8 +266,107 @@ footer {
     cursor: pointer;        
 }
 
-@media (max-width: 900px) {
-}
+
 
 @media (max-width: 350px) {
+    nav {
+        flex-direction: column; 
+        padding-bottom: 10px;
+        height: auto; 
+    }
+
+    .logo {
+        margin: 7px auto;
+        height: 50px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 1px;
+        width: 100%; 
+        padding: 0;
+    }
+
+    .menu li {
+        text-align: center; 
+        width: 100%;
+    }
+
+    .menu a {
+        font-size: 16px; 
+        display: block;  /* Para que sea fácil darle con el dedo */
+        padding: 5px 0;
+    }
+
+    
+    .comet {
+        height: 100vh; 
+        position: fixed; 
+    }
+
+    .titulo1, .titulo3, .titulo4 {
+        font-size: 24px;
+        color: white;
+    }
+    
+    
+    .row {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+    }
+
+    
+    .coche1, .coche2, .coche3, .coche4 {
+        width: 90%;
+        height: 250px; 
+        margin: 0 0 20px 0; 
+              
+    }
+
+    
+    .botoncoche {
+        width: 80%; 
+    }
+
+    
+    .cajareseña {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .reseña {
+        width: 85%; 
+        margin: 10px 0; 
+        background-color: white;
+    }
+
+    
+    .cajatarjeta {
+        flex-direction: column; 
+        align-items: center;
+        flex-wrap: nowrap; 
+    }
+
+    .tarjeta {
+        width: 90%; 
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        height: auto; 
+    }
+
+    
+    .mapa {
+        width: 100%; 
+        height: 600px
+    }
+    
+    
+    .titulo1::after, .titulo2::after, .titulo3::after, .titulo4::after {
+        width: 30%; 
+    }
+
 }
+
